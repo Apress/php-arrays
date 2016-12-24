@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lan='en'>
+<head>
+<title>Customer Information Form</title>
+</head>
+<body>
+<form method='post' action='process_customer.php'>
+<h2>Please enter information in all fields</h2>
+First Name <input type='text' pattern='[a-zA-Z ]*' title='15 or less alphabetic characters' maxlength='15' name='first_name' id='first_name' /><br />
+Last Name <input type='text' pattern='[a-zA-Z ]*' title='20 or less alphabetic characters' maxlength='20' name='last_name' id='last_name' /><br />
+Address <input type='text' title='30 or less characters' maxlength='30' name='address' id='address' /><br />
+City <input type='text' pattern='[a-zA-Z ]*'  title='20 or less characters' maxlength='20' name='city' id='city' /><br />
+State <input type='text' pattern='[a-zA-Z ]*'  title='2 characters' maxlength='2' name='state' id='state' /><br />
+Zip code <input type='number' min='11111' max='99999' title='5 numerical characters' name='zip_code' id='zip_code' /><br />
+<input type='submit' value="Click to submit your information" />
+</form>
+</body>
+</html>
